@@ -1,0 +1,6 @@
+name=input("Enter the string:")
+f=input("Enter the element need to replace:")
+d=input("Enter the replacement element:")
+print("__________________________________")
+print("After replacing:",name.replace(f,d))
+print("__________________________________")
