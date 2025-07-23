@@ -1,0 +1,10 @@
+s=input("Enter a string: ")
+e=""
+for i in s:
+    if i not in e:
+        c=0
+        for j in s:
+            if i==j:
+                c+=1
+        print(i,c)
+        e+=i
