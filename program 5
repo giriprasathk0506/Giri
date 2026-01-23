@@ -1,0 +1,25 @@
+CREATE TABLE exe6(id number(10), fname varchar2(15), Iname varchar2(15), email varchar2(30), hiredate varchar(20) jodid varchar2(10), salary number(10), mid number(5), deptid number(5));
+
+insert into exe6 values (761,'deepika','balu', 'deepabalu2005@gmail.com','05-11-2005', 'ap', 70000,123,12);
+
+insert into exe6 values (763,'madhu', 'hasini', 'medhunhasini2014@gmail.com','12-03-2014', 'ap', 70000,124,12);
+
+insert into exe6 values (765,'jeen', 'mersaline', 'jeenmersaline2002@gmail.com','10-01-2002', 'HOD', 100000, null, 12);
+
+insert into exe6 values
+
+(767,'sambath', 'kumar','sambathkumar2004@gmail.com','04-12-2004', 'HOD', 100000,null, 15);
+
+insert into exe6 values (769,'nandhini', 'mam', 'nandhini2011@gmail.com','09-10-2011','ap', 60000,125,15);
+
+insert into exe6 values (721,'siva', 'kumar', 'sivakumar2016@gmail.com','08-05-2016', 'ap', 65000,126,15);
+
+select * from exe6;
+
+select (fname||"||Iname) name from exe6 where salary > (select salary from exe6 where id=763);
+
+select (fname||"||Iname) as name, salary, deptid,jodid from exe6 where jodid=(select jodid from exe6 where id=769);
+
+select id, fname||' '||Iname from exe6 where salary > (select avg(salary) from exe6);
+
+select * from exe6 where salary=(select salary from exe6 where fname='deepika');
