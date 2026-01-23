@@ -18,12 +18,12 @@ insert into empl values(103, 'cc', 1);
 
 insert into empl values(104,'dd',3);
 
-select d.deptname, e.empname from dept d join empl e on d.deptid=e.deptid where d.deptid 2 order by d.deptname;
+select d.deptname, e.empname from dept d join empl e on d.deptid=e.deptid where d.deptid>2 order by d.deptname;
 
-select d.deptname, e.empname from dept d left outer join empl e on d.deptid e.deptid where d.deptid>2 order by d.deptname;
+select d.deptname, e.empname from dept d left outer join empl e on d.deptid= e.deptid where d.deptid>2 order by d.deptname;
 
-select d.deptname, e.empname from dept d right outer join empl e on d.deptid-e.deptid where d.deptid>2 order by d.deptname;
+select d.deptname, e.empname from dept d right outer join empl e on d.deptid=e.deptid where d.deptid>2 order by d.deptname;
 
-select d.deptname, e.empname from dept d full outer join empl e on d.deptid e.deptid where d.deptid>2 order by d.deptname;
+select d.deptname, e.empname from dept d full outer join empl e on d.deptid= e.deptid where d.deptid>2 order by d.deptname;
 
 select d.deptname, e.empname from dept d cross join empl e where d.deptid>2 order by d.deptname;
