@@ -1,0 +1,63 @@
+cat("STUDENT MARKS PROCESSING SYSTEM\n\n")
+
+total students <- 3
+
+# FOR LOOP
+
+for (s in 1:total_students) {
+
+cat("Enter marks for Student", s, "\n")
+
+subjects <- 3
+
+total <- 0
+
+sub <- 1
+
+# WHILE LOOP
+
+while (sub <= subjects) {
+
+mark <- as.integer(readline(paste(" Enter mark for Subject", sub, ": ")))
+
+}
+
+# REPEAT LOOP
+
+repeat {
+
+if (mark >= 0 && mark <= 100) {
+
+break
+
+} else {
+
+cat(" Invalid mark! Enter a value between 0 and 100\n")
+
+mark <- as.integer(readline(paste(" Re-enter mark for Subject", sub, ": ")))
+
+}
+
+}
+
+total <- total + mark
+
+sub <- sub +1
+
+average <- total / subjects
+
+# Result
+
+if (average >= 50) {
+
+cat("Result: PASS\n")
+
+} else {
+
+cat("Result: FAIL\n")
+
+}
+
+}
+
+cat("Total:", total," Average:", average, "\n\n")
