@@ -1,0 +1,19 @@
+c <- 16
+
+print(paste("The square root of c is: ",sqrt(c)))
+
+print(paste("The log value of c is: ", log(c)))
+
+print(paste("The sin value of c is: ",sin(c)))
+
+print(paste("The cos value of c is: ",cos(c)))
+
+d <- 14
+
+print(paste("The sum of c and d is: ",sum(c+d)))
+
+print(paste("The minimum value is: ",min(c:d)))
+
+print(paste("The maximum value is: ",max(c:d)))
+
+e <- c(2, 12, 45, 22, 19) sort(e) summary(e)
